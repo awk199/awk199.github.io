@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Barcalona Team</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		
+		<meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Onlino" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+
+		
+	    <link rel="shortcut icon" href="img/icon.jpg">
+		<link rel="apple-touch-icon" href="img/icon.jpg">
+		<link rel="apple-touch-startup-image" href="img/icon.jpg">
+		<link rel="apple-touch-icon-precomposed" href="img/icon.jpg">
+		
+        <script src="js/common.js"></script>
+		<link href="css/common.css" rel="stylesheet">
+		
+
+	</head>
+	<body>
+
+        <div class="body">
+
+            <h2 class="title">
+                Barcalona Team Matches
+            </h2>
+
+            <div id="message" class="message hidden">
+                Congratulations, match has been saved successufully!!
+			</div>
+    
+            <table id="matches" border="1" width="100%" align="center">
+                <thead>
+                    <tr align="center">
+                        <th class="sub-title">
+                            #
+                        </th>
+                        <th class="sub-title">
+                            Date
+                        </th>
+                        <th class="sub-title">
+                            Time
+                        </th>
+                        <th class="sub-title">
+                            Against
+                        </th>
+                        <th class="sub-title">
+                            Studium
+                        </th>
+                        <th class="sub-title">
+                            Score
+                        </th>
+                        <th>
+                            <button class="button" onclick="addMatch()">Add Match</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            03/02/2022
+                        </td>
+                        <td>
+                            18:30
+                        </td>
+                        <td>
+                            Manchester United
+                        </td>
+                        <td>
+                            Old Traford
+                        </td>
+                        <td>
+                            5-2
+                        </td>
+                        <td>
+                            <button class="button" onclick="editMatch(1)">Edit Match</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <form id="form" class="form-hidden">
+    
+                <fieldset>
+                    <legend class="title">Match Details</legend>
+                
+                    <div class="field">
+                        <label for="date" class="sub-title">
+                            Date
+                        </label>
+                        <input id="date" name="date" class="input" type="date" maxlength="10" required="required" placeholder="Date" autocomplete="off">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="time" class="sub-title"">
+                            Time
+                        </label>
+                        <input id="time" name="time" class="input" type="time" maxlength="10" required="required" placeholder="Time" autocomplete="off">
+                    </div>
+            
+                    <div class="field">
+                        <label for="against" class="sub-title"">
+                            Against
+                        </label>
+                        <input id="against" name="against" class="input" type="text" maxlength="50" required="required" placeholder="Against" autocomplete="off">
+                    </div>
+
+                    <div class="field">
+                        <label for="studium" class="sub-title"">
+                            Studium
+                        </label>
+                        <input id="studium" name="studium" class="input" type="text" maxlength="100" required="required" placeholder="Studium" autocomplete="off">
+                    </div>
+
+                    <div class="field">
+                        <label for="score" class="sub-title"">
+                            Score
+                        </label>
+                        <input id="score" name="score" class="input" type="text" maxlength="50" required="required" placeholder="Score" autocomplete="off">
+                    </div>
+            
+                    <div class="field center">
+                        <br>
+                        <input type="button" class="button" value="Save Match Details" onclick="saveMatch()">
+                    </div>
+                    
+                </fieldset>
+                
+            </form>
+
+        </div>
+        
+        
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Barcalona Earned Trophies </title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		
+		<meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Onlino" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+
+		
+	    <link rel="shortcut icon" href="img/icon.jpg">
+		<link rel="apple-touch-icon" href="img/icon.jpg">
+		<link rel="apple-touch-startup-image" href="img/icon.jpg">
+		<link rel="apple-touch-icon-precomposed" href="img/icon.jpg">
+		
+        <script src="js/common.js"></script>
+		<link href="css/common.css" rel="stylesheet">
+		
+
+	</head>
+	<body>
+        <div class="body">
+
+            <h2 class="title">
+                Barcalona Trophies
+            </h2>
+
+            <div id="message" class="message hidden">
+                Congratulations, trophy has been saved successufully!!
+			</div>
+    
+            <table id="trophies" border="1" width="100%" align="center">
+                <thead>
+                    <tr align="center">
+                        <th class="sub-title">
+                            #
+                        </th>
+                        <th class="sub-title">
+                           Cup
+                        </th>
+                        <th class="sub-title">
+                            Final Match Score
+                        </th>
+                        <th class="sub-title">
+                            Match Date
+                        </th>
+                        <th class="sub-title">
+                            Manager
+                        </th>
+                        <th>
+                            <button class="button" onclick="addTrophy()">Add Trophy</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            La Liga
+                        </td>
+                        <td>
+                            2-0
+                        </td>
+                        <td>
+                            5/17/2015
+                        </td>
+                        <td>
+                            Luis Enrique
+                        </td>
+                        <td>
+                            <button class="button" onclick="editTrophy(1)">Edit Details</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <form id="form" class="form-hidden">
+    
+                <fieldset>
+                    <legend class="title">Trophies</legend>
+                
+                    <div class="field">
+                        <label for="cup" class="sub-title">
+                            Cup
+                        </label>
+                        <input id="cup" name="cup" class="input" type="tel" maxlength="100" required="required" placeholder="Cup" autocomplete="off">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="finalMatchScore" class="sub-title">
+                            Final Match Score
+                        </label>
+                        <input id="finalMatchScore" name="finalMatchScore" class="input" type="tel" maxlength="100" required="required" placeholder="Final Match Score" autocomplete="off">
+                    </div>
+            
+                    <div class="field">
+                        <label for="matchDate" class="sub-title">
+                            Match Date
+                        </label>
+                        <input id="matchDate" name="matchDate" class="input" type="matchDate" maxlength="10" required="required" placeholder="Match Date" autocomplete="off">
+                    </div>
+                    <div class="field">
+                        <label for="manager" class="sub-title">
+                            Manager
+                        </label>
+                        <input id="manager" name="matchDate" class="input" type="tel" maxlength="10" required="required" placeholder="Match Date" autocomplete="off">
+                    </div>
+            
+            
+                    <div class="field center">
+                        <br>
+                        <input type="button" class="button" value="Save Trophy Details" onclick="saveTrophy()">
+                    </div>
+                    
+                </fieldset>
+                
+            </form>
+
+        </div>
+        
+        
+	</body>
+</html>

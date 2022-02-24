@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>The Barcalona Web page</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		
+		<meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Onlino" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+
+		
+	    <link rel="shortcut icon" href="img/icon.jpg">
+		<link rel="apple-touch-icon" href="img/icon.jpg">
+		<link rel="apple-touch-startup-image" href="img/icon.jpg">
+		<link rel="apple-touch-icon-precomposed" href="img/icon.jpg">
+		
+        <script src="js/common.js"></script>
+		<link href="css/common.css" rel="stylesheet">
+		
+
+	</head>
+	<body>
+
+        <div class="body">
+
+            <h2 class="title">
+                Barcalona Team Players
+            </h2>
+
+            <div id="message" class="message hidden">
+                Congratulations, player has been saved successufully!!
+			</div>
+    
+            <table id="players" border="1" width="100%" align="center">
+                <thead>
+                    <tr align="center">
+                        <th class="sub-title">
+                            #
+                        </th>
+                        <th class="sub-title">
+                           Kit Number
+                        </th>
+                        <th class="sub-title">
+                            Name
+                        </th>
+                        <th class="sub-title">
+                            Year Of Signing
+                        </th>
+                        <th class="sub-title">
+                            End of The Contract
+                        </th>
+                        <th>
+                            <button class="button" onclick="addPlayer()">Add Player</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            10
+                        </td>
+                        <td>
+                            Lionel Messi
+                        </td>
+                        <td>
+                            2005/2006
+                        </td>
+                        <td>
+                            2020
+                        </td>
+                        <td>
+                            <button class="button" onclick="editPlayer(1)">Edit Player</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <form id="form" class="form-hidden">
+    
+                <fieldset>
+                    <legend class="title">Player Details</legend>
+                
+                    <div class="field">
+                        <label for="number" class="sub-title">
+                            Number
+                        </label>
+                        <input id="number" name="number" class="input" type="tel" maxlength="2" required="required" placeholder="Number" autocomplete="off">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="name" class="sub-title">
+                            Name
+                        </label>
+                        <input id="name" name="name" class="input" type="tel" maxlength="100" required="required" placeholder="Name" autocomplete="off">
+                    </div>
+            
+                    <div class="field">
+                        <label for="yearOfSigning" class="sub-title">
+                            Year Of Signing
+                        </label>
+                        <input id="yearOfSigning" name="yearOfSigning" class="input" type="tel" maxlength="10" required="required" placeholder="Year Of Signing" autocomplete="off">
+                    </div>
+                    <div class="field">
+                        <label for="endOfTheContract" class="sub-title">
+                            End Of The Contract
+                        </label>
+                        <input id="endOfTheContract" name="endOfTheContract" class="input" type="tel" maxlength="10" required="required" placeholder="End Of The Contract" autocomplete="off">
+                    </div>
+            
+            
+                    <div class="field center">
+                        <br>
+                        <input type="button" class="button" value="Save Player Details" onclick="savePlayer()">
+                    </div>
+                    
+                </fieldset>
+                
+            </form>
+
+        </div>
+        
+        
+	</body>
+</html>

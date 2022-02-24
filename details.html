@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Barcalona Team</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		
+		<meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Onlino" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+
+		
+	    <link rel="shortcut icon" href="img/icon.jpg">
+		<link rel="apple-touch-icon" href="img/icon.jpg">
+		<link rel="apple-touch-startup-image" href="img/icon.jpg">
+		<link rel="apple-touch-icon-precomposed" href="img/icon.jpg">
+		
+        <script src="js/common.js"></script>
+		<link href="css/common.css" rel="stylesheet">
+		
+
+	</head>
+	<body>
+
+        <div class="body">
+
+            <h2 class="title">
+                Apply Barcalona Team Details
+            </h2>
+
+            <div id="message" class="message hidden">
+                Congratulations, your team details has been saved successufully!!
+			</div>
+    
+            <div class="field">
+                <label for="history" class="sub-title">
+                    Name of players
+                </label>
+                <textarea id="nameOfPlayers" name="nameOfPlayers" class="input" maxlength="500" required="required" placeholder="Name of players" autocomplete="off"></textarea>
+            </div>
+    
+            
+            <div class="field">
+                <label for="history" class="sub-title">
+                    Hitory Of Team
+                </label>
+                <textarea id="history" name="history" class="input" maxlength="500" required="required" placeholder="History" autocomplete="off"></textarea>
+            </div>
+    
+           
+            <div class="field">
+                <label for="numberOfPlayers" class="sub-title">
+                  Number Of Players
+                </label>
+                <input id="numberOfPlayers" name="numberOfPlayers" class="input" type="tel" maxlength="2" required="required" placeholder="Number of Players" autocomplete="off">
+            </div> 
+    
+            <div class="field">
+                <label for="address" class="sub-title">
+                 Address
+                </label>
+                <input id="address" name="name" class="input" type="text" maxlength="100" required="required" placeholder="Address" autocomplete="off">
+            </div> 
+    
+            <div class="field">
+                <label for="sports" class="sub-title">
+                 Sports
+                </label>
+                <br>
+                <input id="football" type="checkbox" value="Football">Football
+                <input id="basketball" type="checkbox" value="Basketball">Basketball
+                <input id="handball" type="checkbox" value="Handball">Handball
+                <input id="volleyball" type="checkbox" value="Volleyball">Volleyball
+            </div>  
+
+            <div class="field">
+                <label for="sports" class="sub-title">
+                 Select the countries of the players
+                </label>
+                <br>
+                <input id="spain" type="checkbox" value="Spain">Spain
+                <input id="england" type="checkbox" value="England">England
+                <input id="france" type="checkbox" value="France">France
+                <input id="germany" type="checkbox" value="Germany">Germany
+                <input id="portugal" type="checkbox" value="Portugal">Portugal
+                <input id="bahrain" type="checkbox" value="Bahrain">Bahrain
+                <input id="other" type="checkbox" value="Other">Other
+                
+            </div>
+
+            <div class="field">
+                <label for="ageGroup" class="sub-title">
+                    Age Group
+                </label>
+                <select id="ageGroup" class="input">
+                    <option value="">Age Group</option>
+                    <option>U7</option>
+                    <option>U15</option>
+                    <option>U18</option>
+                    <option>U21</option>
+                    <option>Adult</option>
+                </select>
+            </div> 
+    
+            <div id="save" class="field center">
+                <br>
+                <button class="button" onclick="saveTeam()">Save Team Details</button>
+            </div>
+
+        </div>
+
+        
+	</body>
+</html>
